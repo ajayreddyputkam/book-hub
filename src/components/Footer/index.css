@@ -1,0 +1,55 @@
+.footer-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin-top: 55px;
+}
+
+.footer-icons-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+  margin-top: 10px;
+}
+
+.home-footer-social-icon {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.7143px;
+  line-height: 16px;
+  text-align: center;
+  color: #3d3c3c;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-footer-social-icon {
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+}
+
+.home-contact-us-footer {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3d3c3c;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-contact-us-footer {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

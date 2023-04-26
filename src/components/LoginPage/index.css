@@ -1,0 +1,219 @@
+.login-page-bg-container {
+  background-color: #e5e5e5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-bg-container {
+    flex-direction: row;
+    justify-content: stretch;
+  }
+}
+
+.login-page-image-lg {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-image-lg {
+    display: block;
+    width: 50%;
+    max-width: 780px;
+    height: 100vh;
+  }
+}
+
+.login-page-image-sm {
+  width: 216px;
+  height: 216px;
+  margin-bottom: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-image-sm {
+    display: none;
+  }
+}
+
+.login-page-form-main-container {
+  width: 98%;
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-form-main-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 0px;
+  }
+}
+
+.login-page-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-form-container {
+    background-color: #ffffff;
+    width: 499px;
+    height: 484px;
+    padding: 10px;
+  }
+}
+
+.login-page-website-logo {
+  width: 104px;
+  height: 28px;
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-website-logo {
+    width: 141px;
+    height: 48px;
+  }
+}
+
+.login-page-username-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 96%;
+  max-width: 312px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-username-input-container {
+    width: 96%;
+    max-width: 360px;
+  }
+}
+
+.login-page-username-label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5a7184;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.username-input-login-page {
+  background: #ffffff;
+  border: 1px solid #c3cad9;
+  border-radius: 8px;
+  width: 100%;
+  height: 56px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #183b56;
+  padding: 9px;
+  outline-color: blueviolet;
+}
+
+.login-page-password-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 96%;
+  max-width: 312px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-password-input-container {
+    width: 96%;
+    max-width: 360px;
+  }
+}
+
+.login-page-password-label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5a7184;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.password-input-login-page {
+  background: #ffffff;
+  border: 1px solid #c3cad9;
+  border-radius: 8px;
+  width: 100%;
+  height: 56px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #183b56;
+  padding: 9px;
+  outline-color: blueviolet;
+}
+
+.login-page-login-button {
+  width: 96%;
+  max-width: 312px;
+  height: 40px;
+  margin-top: 21px;
+  background-color: #0284c7;
+  border-radius: 8px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-login-button {
+    max-width: 360px;
+    font-size: 18px;
+    font-family: 'Inter';
+  }
+}
+
+.error-msg-login {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ef4444;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  width: 96%;
+  max-width: 312px;
+}
+
+@media screen and (min-width: 768px) {
+  .error-msg-login {
+    font-family: 'Inter';
+    line-height: 17px;
+    max-width: 360px;
+  }
+}
