@@ -1,0 +1,63 @@
+.bookshelf-list-item-tab {
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .bookshelf-list-item-tab {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+.bookshelf-tab-item-button {
+  height: 24px;
+  border: 1px solid #0284c7;
+  border-radius: 25px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #0284c7;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 11px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .bookshelf-tab-item-button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475569;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+}
+
+.selected-tab-background {
+  background: #0284c7;
+  color: #f8fafc;
+}
+
+@media screen and (min-width: 768px) {
+  .selected-tab-background {
+    background: none;
+    color: #0284c7;
+  }
+}

@@ -138,6 +138,10 @@
   }
 }
 
+.find-books-home-link {
+  text-decoration: none;
+}
+
 .find-books-button-home-sm {
   width: 104px;
   height: 36px;

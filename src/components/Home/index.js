@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import Cookie from 'js-cookie'
+import {Link} from 'react-router-dom'
 
 import Header from '../Header'
 import TopRatedBooksHome from '../TopRatedBooksHome'
@@ -79,15 +80,19 @@ class Home extends Component {
                 have enjoyed in the past, and we will give you surprisingly
                 insightful recommendations.
               </p>
-              <button type="button" className="find-books-button-home-sm">
-                Find Books
-              </button>
+              <Link to="/shelf" className="find-books-home-link">
+                <button type="button" className="find-books-button-home-sm">
+                  Find Books
+                </button>
+              </Link>
               <div className="home-top-rated-books-main-container">
                 <div className="top-rated-heading-container-home">
                   <h1 className="home-top-rated-heading">Top Rated Books</h1>
-                  <button type="button" className="home-find-books-button">
-                    Find Books
-                  </button>
+                  <Link to="/shelf" className="find-books-home-link">
+                    <button type="button" className="home-find-books-button">
+                      Find Books
+                    </button>
+                  </Link>
                 </div>
                 <TopRatedBooksHome
                   topRatedBooksList={topRatedBooksList}

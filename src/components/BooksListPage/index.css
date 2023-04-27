@@ -1,0 +1,172 @@
+.book-page-list-link {
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .book-page-list-link {
+    min-width: 250px;
+    width: 47%;
+    margin-right: 14px;
+    flex-grow: 1;
+  }
+}
+
+.book-page-list-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .book-page-list-item {
+    align-items: flex-start;
+  }
+}
+
+.book-page-cover-pic-image {
+  height: 100%;
+  width: 123px;
+  border-radius: 8px;
+  margin-right: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-page-cover-pic-image {
+    height: 100%;
+    width: 123px;
+    border-radius: 8px;
+  }
+}
+
+.book-list-title-author-details-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+}
+
+.book-list-page-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #334155;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-list-page-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+.book-list-page-author-name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #475569;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-list-page-author-name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.book-list-page-rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.book-list-page-rating-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #475569;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-list-page-rating-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.book-list-page-rating-icon {
+  font-size: 14px;
+  color: #fbbf24;
+  margin-right: 2px;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-list-page-rating-icon {
+    font-size: 14px;
+  }
+}
+
+.book-list-page-rating-number {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #334155;
+  margin-left: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-list-page-rating-number {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.book-list-page-read-status {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #475569;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-list-page-read-status {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.read-status-span-book-page-list {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #0284c7;
+}
+
+@media screen and (min-width: 768px) {
+  .read-status-span-book-page-list {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

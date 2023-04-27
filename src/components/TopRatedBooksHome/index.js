@@ -84,7 +84,7 @@ const TopRatedBooksHome = props => {
 
   const renderLoadingView = () => (
     <div testid="loader" className="loader-top-rated-home-container">
-      <Loader type="TailSpin" color="#0284C7" height={50} width={50} />
+      <Loader type="TailSpin" color="#0284C7" height={70} width={70} />
     </div>
   )
 

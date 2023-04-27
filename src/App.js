@@ -3,6 +3,7 @@ import {Switch, Route} from 'react-router-dom'
 import ProtectedRoute from './components/ProtectedRoute'
 import LoginPage from './components/LoginPage'
 import Home from './components/Home'
+import Bookshelves from './components/Bookshelves'
 
 import './App.css'
 
@@ -35,6 +36,7 @@ const App = () => (
   <Switch>
     <Route exact path="/login" component={LoginPage} />
     <ProtectedRoute exact path="/" component={Home} />
+    <ProtectedRoute exact path="/shelf" component={Bookshelves} />
   </Switch>
 )
 
