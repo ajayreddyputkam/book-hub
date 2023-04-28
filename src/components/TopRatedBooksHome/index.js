@@ -7,14 +7,21 @@ import './index.css'
 const settings = {
   dots: false,
   infinite: false,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   speed: 500,
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 500,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3,
         slidesToScroll: 1,
       },
     },

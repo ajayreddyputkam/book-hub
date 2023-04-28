@@ -1,6 +1,5 @@
 import {Component} from 'react'
 import Cookie from 'js-cookie'
-import {BsSearch} from 'react-icons/bs'
 import Loader from 'react-loader-spinner'
 
 import './index.css'
@@ -8,6 +7,7 @@ import Header from '../Header'
 import BookshelvesTabItems from '../BookshelvesTabItems'
 import BooksListPage from '../BooksListPage'
 import Footer from '../Footer'
+import SearchComponent from '../SearchComponent'
 
 const bookshelvesList = [
   {
@@ -99,8 +99,8 @@ class Bookshelves extends Component {
     )
   }
 
-  changeTheSearchInput = event => {
-    this.setState({searchInput: event.target.value})
+  changeTheSearchInput = value => {
+    this.setState({searchInput: value})
   }
 
   searchForInputValue = () => {
@@ -146,7 +146,7 @@ class Bookshelves extends Component {
     <div className="book-list-page-failure-container">
       <img
         src="https://res.cloudinary.com/dgfrvvyjg/image/upload/v1682511707/book%20hub/Group_7522_failure_image_n701e6.png"
-        alt="failure"
+        alt="failure view"
         className="book-list-page-failure-image"
       />
       <p className="book-list-page-failure-text">
@@ -195,24 +195,7 @@ class Bookshelves extends Component {
         <Header />
         <div className="bookshelves-items-main-container">
           <div className="bookshelves-main-inner-container">
-            <div className="search-bar-container-sm">
-              <input
-                type="search"
-                placeholder="Search"
-                className="search-bar-sm"
-                value={searchInput}
-                onChange={this.changeTheSearchInput}
-              />
-              <button
-                type="button"
-                className="search-icon-button-sm"
-                testid="searchButton"
-                onClick={this.searchForInputValue}
-              >
-                <BsSearch className="search-icon-sm" />
-              </button>
-            </div>
-            <div className="bookshelves-tab-items-main-container">
+            <div className="bookshelves-tab-items-main-container-lg">
               <h1 className="bookshelves-heading">Bookshelves</h1>
               <ul className="bookshelves-tab-list-container">
                 {bookshelvesList.map(eachShelf => (
@@ -231,23 +214,24 @@ class Bookshelves extends Component {
                   <h1 className="books-list-type-heading">
                     {booksHeading} Books
                   </h1>
-                  <div className="books-list-search-bar-container">
-                    <input
-                      type="search"
-                      placeholder="Search"
-                      value={searchInput}
-                      className="books-list-search-bar"
-                      onChange={this.changeTheSearchInput}
-                    />
-                    <button
-                      type="button"
-                      className="books-list-search-icon-button"
-                      onClick={this.searchForInputValue}
-                      testid="searchButton"
-                    >
-                      <BsSearch className="books-list-search-icon" />
-                    </button>
-                  </div>
+                  <SearchComponent
+                    changeTheSearchInput={this.changeTheSearchInput}
+                    searchForInputValue={this.searchForInputValue}
+                    searchInput={searchInput}
+                  />
+                </div>
+                <div className="bookshelves-tab-items-main-container-sm">
+                  <h1 className="bookshelves-heading">Bookshelves</h1>
+                  <ul className="bookshelves-tab-list-container">
+                    {bookshelvesList.map(eachShelf => (
+                      <BookshelvesTabItems
+                        eachShelf={eachShelf}
+                        key={eachShelf.id}
+                        isTabActive={eachShelf.id === activeTabId}
+                        changeActiveTab={this.changeActiveTab}
+                      />
+                    ))}
+                  </ul>
                 </div>
                 {this.renderParticularView()}
               </div>
